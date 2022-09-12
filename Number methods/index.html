@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+
+    // const result = (5).add(3).substract(4).divide(2).multiply(10);
+    // console.log(result); // 20
+
+    Number.prototype.add = function () {
+        return this + 3
+    }
+    Number.prototype.substract = function () {
+        return this - 4
+    }
+    Number.prototype.divide = function () {
+        return this / 2
+    }
+    Number.prototype.multiply = function () {
+        return this * 10
+    }
+    console.log((5).add(3).substract(4).divide(2).multiply(10))
+</script>
+
+</html>
